@@ -12,6 +12,12 @@
     margin: 10px auto;
     max-width: 800px;
   }
+
+  li :hover{
+    background-color: blueviolet;
+    color: azure;
+
+  }
   header,
   footer {
     border: 1em;
