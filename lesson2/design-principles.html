@@ -4,43 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Principles Examples</title>
-    <link rel="stylesheet" href="styles/base.css">
-
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
 </head>
 <body>
-    <div class="Intro">
-        <h2>Design Principles Document</h2>
-        <p>Benjamin Brandford Hayford JNR.</p>
-      </div>
-
-    <div class="card">
+    <header>
+        <h1>Design Principles Document</h1>
+        <h2>Benjamin Brandford Hayford JNR.</h2>
+    </header>
+    <main>
+    <section class="visual">
         <h2>Visual Hierarchy</h2>
-        <p>Design Principle: Visual Hierarchy</p>
         <p>Example Organization/Company: Nike</p>
         <p>Brief Description: Visit Nike's website and observe how they use large, striking product images, bold typography, and contrasting colors to create a compelling visual hierarchy. The most important elements, such as new product releases and featured collections, are prominently displayed, while secondary information is organized neatly, guiding users' attention effectively.</p>
         <a href="https://www.nike.com">Visit Nike's Website</a>
         <img src="images/nike.PNG" alt="Nike">
-      </div>
+    </section>
       
 
-      <div class="card">
+      <section class="fitt">
         <h2>Fitt's Law</h2>
-        <p>Design Principle: Fitt's Law</p>
         <p>Example Organization/Company: Smartphone App Interfaces (e.g., Instagram)</p>
         <p>Brief Description: Open a popular mobile app like Instagram. Notice how app icons are designed to be large and easily tappable, especially for common actions like liking a photo or adding a comment. The positioning of interactive elements, such as buttons, considers the natural movement of the user's thumb or finger, making them more accessible.</p>
         <a href="https://www.instagram.com">Open Instagram App</a>
         <img src="images/instagram.PNG" alt="Instagram">
-      </div>
+      </section>
       
 
-    <div class="card">
+    <section class="white">
         <h2>White Space and Clean Design</h2>
-        <p>Design Principle: White Space and Clean Design</p>
         <p>Example Organization/Company: Apple</p>
         <p>Brief Description: Visit Apple's website and note how they utilize ample white space to create a clean and uncluttered design. Content is given room to breathe, enhancing readability and providing a sense of simplicity and elegance. Images and text are strategically spaced, allowing users to focus on the products and messages without distractions.</p>
         <a href="https://www.apple.com">Visit Apple's Website</a>
         <img src="images/apple.PNG" alt="Apple Website">
-      </div>
-      
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="copyright"></span> | Benjamin B. Hayford | Ghana</p>
+    <p class="last_updated">Last Updated: <span id="last_updated"></span></p>
+  </footer>
+  <script src="scripts/foottime.js"></script>
+</body>
+</html>
 </body>
 </html>
