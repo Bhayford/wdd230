@@ -16,10 +16,10 @@ footer {
     flex-wrap: wrap;
     background-color: #0F1020;
     padding: 5px;
-    color: #FAA6FF;
+    color: white;
  }
  body {
-  background-color: #EFC3F5;
+  background-color: silver;
  }
 
  nav ul {
@@ -38,7 +38,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: #FAA6FF;
+  color: white;
   padding: 0.5rem 0;
   text-decoration: none;
   font-size: 0.9rem;
@@ -55,6 +55,6 @@ tr td {
 }
 
 tr td:first-child {
-  color: #FAA6FF;
+  color: whitesmoke;
   background-color: #0F1020;
 }
