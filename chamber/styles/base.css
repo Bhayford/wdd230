@@ -7,7 +7,8 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 4fr auto;
-  background-color: #faa6ff;
+  background-color: #0F1020;
+  color: #ddd0c8;
   padding: 0.8rem;
   min-height: 100%;
 }
@@ -22,10 +23,12 @@ header {
 .main-header {
   grid-row: 2/4;
   grid-column: 1/2;
+  color: #ddd0c8;
 }
 .main-header {
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
+  color: #ddd0c8;
 }
 
 header #header-logo img {
@@ -41,6 +44,10 @@ header #header-logo img {
 .chamber-name {
   margin-left: 5px;
   padding-bottom: 10px;
+}
+
+.chamber-name h2 {
+  color: #ddd0c8;
 }
 
 .socials {
@@ -87,7 +94,7 @@ nav button {
   background-color: transparent;
   border: none;
   font-size: 2rem;
-  color: slateblue;
+  color: whitesmoke;
 }
 nav ul {
   list-style-type: none;
