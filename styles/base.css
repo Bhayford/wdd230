@@ -19,7 +19,25 @@
     background-color: blueviolet;
     color: azure;
     
-
+    .hero-image {
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+  }
+  
+  .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+      white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
   }
   header,
   footer {
