@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.getElementById("submit").addEventListener("click", function(event) {
+  // Your event handling code here
+});
   event.preventDefault();
   window.location.href = "chamber/thankyou.html";
 });

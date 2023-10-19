@@ -3,5 +3,5 @@ function toggleMenu(){
     document.getElementById("humburgerbtn").classList.toggle("open");
 }
 
-const x = document.getElementById('humburgerbtn');
-x.onclick  = toggleMenu;
+const x = document.getElementById('hamburgerbtn');
+x.onclick = toggleMenu;
