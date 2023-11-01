@@ -1,0 +1,48 @@
+:root {
+    --form-background: #f0f0f0;
+    --form-border: 1px solid #ccc;
+    --form-padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--form-padding);
+    background-color: var(--form-background);
+    border: var(--form-border);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"] {
+    padding: 5px;
+    margin: 5px 0;
+    border: var(--form-border);
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add more CSS for styling as needed */
+
+/* Media queries for responsiveness can be added here */
