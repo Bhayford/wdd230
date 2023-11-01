@@ -1,0 +1,52 @@
+:root {
+    --background-color: #f0f0f0;
+    --header-background: #007BFF;
+    --header-text-color: slateblue;
+    --content-background: #fff;
+    --text-color: #333;
+    --confirmation-color: #4CAF50;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--content-background);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    color: var(--header-text-color);
+}
+
+p {
+    color: var(--text-color);
+    font-size: 18px;
+    text-align: center;
+}
+
+.confirmation {
+    background-color: var(--confirmation-color);
+    color: slateblue;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
