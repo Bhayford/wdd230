@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nana Kwesi</title>
-    <link rel="favi" href="images/favicon.ico" />
+    <link rel="icon" href="images/favicon.ico" />
     <meta
       name="description"
-      content="A website that will habour all other business"
+      content="A website that will harbor all other business"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,56 +27,47 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link href="styles/normalize.css" rel="stylesheet" />
-    <link href="styles/base.css" rel="stylesheet" />
-    <link href="styles/medium.css" rel="stylesheet" />
-    <link href="styles/large.css" rel="stylesheet" />
-  </head>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+</head>
 
-  <body>
+<body>
     <header>
-      <div id="banner"></div>
-      <section class="main-header">
-        <div class="img-name">
-          <div id="header-logo">
-            <img src="images/logo.png" alt=" chamber logo" />
-          </div>
-          <div class="chamber-name">
-            <h2>Nana Kwesi Chamber of Commerce</h2>
-          </div>
+        <div id="banner"></div>
+        <section class="main-header">
+            <div class="img-name">
+                <div id="header-logo">
+                    <img src="images/logo.webp" alt="chamber logo" />
+                </div>
+                <div class="chamber-name">
+                    <h2>Nana Kwesi Chamber of Commerce</h2>
+                </div>
+            </div>
+
+            <nav>
+                <button id="hamburgerbtn"></button>
+                <ul id="primaryNav">
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">Discover</a></li>
+                    <li><a href="">Directory</a></li>
+                    <li><a href="">Join</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <div class="header-date">
+            <span id="currentdate"></span>
         </div>
-
-        <div class="socials">
-          <a href="https://web.facebook.com/login/?_rdc=1&_rdr">
-            <img src="images/fb-logo.png" alt="facebook icon" />
-          </a>
-          <a href="https://www.instagram.com/">
-            <img src="images/ig-logo.png" alt="instagram icon" />
-          </a>
-        </div>
-
-        <nav>
-          <button id="humburgerbtn"><span>&#9776;</span><span>X</span></button>
-          <ul id="primaryNav">
-            <li class="active"><a href="">Home</a></li>
-            <li><a href="">Discover</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
-
-      <div class="header-date">
-        <span id="currentdate"></span>
-      </div>
     </header>
 
     <main class="join">
         <div class="form">
             <h1>Join Us</h1>
             <form action="thankyou.html" method="GET" autocomplete="on">
-                <label for="fname">
+              <label for="fname">
                     First Name
                     <input type="text" id="fname" name="fname" required>
                 </label>
@@ -88,13 +79,14 @@
 
                 <label for="business">
                     Business Name
-                    <input type="text" id="business" name="business" pattern="[- A-Z a-z 0-9]" required>
+                    <input type="text" id="business" name="business" pattern="[- A-Z a-z 0-9]+" required>
                 </label>
 
                 <label for="title">
-                    Job Title
-                    <input type="text" id="title" name="title">
-                </label>
+                  Job Title
+                  <input type="text" id="title" name="title">
+              </label>
+              
 
                 <label for="email">
                     Email
@@ -126,13 +118,12 @@
                     Datetime
                     <input type="datetime-local" name="dateTime" id="dateTime" required hidden>
                 </label>
-                <input type="submit" id=" submit" value="submit" onclick="openAnotherSite(thankyou.html)">
 
+                <input type="submit" id="submit" value="Submit">
             </form>
         </div>
 
         <div class="membershipLevels">
-
             <h1>Membership Levels</h1>
 
             <div class="nonprofit">
@@ -157,7 +148,7 @@
                 </ul>
             </div>
 
-            <div class="silver">
+            <div class "silver">
                 <h2>Silver</h2>
                 <p class="fee">GH-100/month</p>
                 <p>
@@ -186,50 +177,49 @@
                     <li>1 free training per quarter</li>
                 </ul>
             </div>
-
-
         </div>
-
     </main>
+
     <footer>
-      <div class="information">
-        <div class="footer-logo">
-          <img src="images/site-logo.png" alt="emrys b2b logo" />
+        <div class="information">
+            <div class="footer-logo">
+                <img src="images/logo.webp" alt="logo" />
+            </div>
+            <div>
+                <h2>Nana Kwesi Chamber of Commerce</h2>
+                <p>Tema</p>
+                <p>Accra, Ghana</p>
+            </div>
+            <div>
+                <p>benjaminbrandford00@gmail.com</p>
+                <p>+233594563974</p>
+                <a href="https://www.google.com/maps/@5.6037168,-0.1869644,11z">📍 See Location</a>
+            </div>
         </div>
-        <div>
-          <h2>Emrys Chamber of Commerce</h2>
-          <p>Tema Community 1</p>
-          <p>Accra, Ghana</p>
+        <hr />
+        <div class="footerTime">
+            &copy; <span id="currentyear"></span> <span class="slash">|</span>
+            Nana<span class="slash">|</span>
+            <span id="creator-name"><strong>|Benjamin Brandford Hayford|</strong> </span>
+            <span class="slash">|</span>
+            <br class="footer1" />
+            <div class="socials">
+                <a href="https://web.facebook.com/login/?_rdc=1&_rdr">
+                    <img src="images/fb-logo.webp" alt="facebook icon" />
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/ig-logo.webp" alt="instagram icon" />
+                </a>
+            </div>
+            WDD 230 Project <span class="slash">|</span>
+            <br class="footer2" />
+            <div id="lastModified">Last Modified</div>
         </div>
-        <div>
-          <p>info@emrysb2b.com</p>
-          <p>+233247709497</p>
-          <a href="https://www.google.com/maps/@5.6037168,-0.1869644,11z"
-            >📍 See Location</a
-          >
-        </div>
-      </div>
-
-      <hr />
-      <div class="footerTime">
-        &copy; <span id="currentyear"></span> <span class="slash">|</span>
-
-        Emrys<span class="slash">|</span>
-        <span id="creator-name"><strong>|Bernard Amegah|</strong> </span>
-        <span class="slash">|</span>
-        <br class="footer1" />
-
-        WDD 230 Project <span class="slash">|</span>
-        <br class="footer2" />
-
-        <div id="lastModified">Last Modified</div>
-      </div>
     </footer>
     <script src="scripts/date.js"></script>
     <script src="scripts/nav.js"></script>
     <script src="scripts/home.js"></script>
-    <script>
-      scr = " windchill.js";
-    </script>
-  </body>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
 </html>
