@@ -1,4 +1,4 @@
-const url = 'json/data.json';
+const url = 'json/members.json';
 
 const switchToGridView = () => {
   const directoryContainer = document.querySelector('.directory-container');
