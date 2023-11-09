@@ -4,7 +4,7 @@
     <meta property="og:title" content="Benjamin Brandford Hayford Junior - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://bhayford.github.io/wdd230/images/benjamin.png">
-    <meta property="og:url" content="https://bhayford.github.io/wdd230/>
+    <meta property="og:url" content="https://bhayford.github.io/wdd230/">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +15,12 @@
     <link rel="stylesheet" href="styles/base.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@100;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    
 </head>
     
 <body>
     <header>
-            <img src="images/benjamin.webp" alt="Benjamin Profile Image">
-            <h1>Benjamin Brandford Hayford Junior</h1>
-        
+        <img src="images/benjamin.webp" alt="Benjamin Profile Image">
+        <h1>Benjamin Brandford Hayford Junior</h1>
     </header>
 
     <nav>
@@ -34,18 +32,13 @@
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng" target="_blank">Scripture</a></li>
         </ul>
     </nav>
-    
 
     <main>
         <div class="hero-image">
             <picture>
                 <source media="(max-width: 400px)" srcset="temple-mobile.webp">
                 <img src="images/temple-mobile.webp" alt="Favorite Temple Image">
-
-
-    
                 <source media="(max-width: 960px)" srcset="temple-large.webp">
-    
             </picture>
             <div class="overlay">Accra, Ghana Temple</div>
         </div>
@@ -53,31 +46,24 @@
         
         <section class="card">
             <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="lesson2/design.html">Activity 1: Web Design Principles</a></li>
-                <li><a href="lesson2/design-principles.html">Activity 2: Web Design Principles Document</a></li>
-                <li><a href="lesson3/images/exercise.PNG">Activity 3: CSS Combinators Exercise</a></li>
-                <li><a href="https://codepen.io/Benjamin-Brandford/pen/wvRxrPz">Activity 4: Responsive Menu</a></li>
-                <li><a href="lesson09/prophets.html">Activity 5: The Fetch API</a></li>
-
+            <ul id="activity-links">
             </ul>
             <p>Lessons are to make us understand the course better</p>
         </section>
         <section class="card">
             <h3>Information</h3>
             <p>Weather: N/A</p>
-            <p>Number of Visits: <span id="visitCount">0</span></p></section>
-        </main>
-        
-   
+            <p>Number of Visits: <span id="visitCount">0</span></p>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; <span id="current_year"></span> Benjamin Brandford Hayford Junior - WDD 230</p>
+        <p id="lastModified">Last modified: <span id="last_modified"></span></p>
+    </footer>
 
-<footer>
-    <p>&copy; <span id="current_year"></span> Benjamin Brandford Hayford Junior - WDD 230</p>
-    <p id="lastModified">Last modified: <span id="last_modified"></span></p>
-</footer>
-<script src="scripts/getdates.js"></script>
-<script src="scripts/visitcounts.js"></script>
-
+    <script src="scripts/links.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/visitcounts.js"></script>
 </body>
 </html>
