@@ -16,7 +16,6 @@ async function getLinks() {
 }
 
 function displayLinks(weeks) {
-  // Assuming you have an existing HTML element with the ID "activity-links" to display the links
   const activityLinksElement = document.getElementById("activity-links");
 
   weeks.forEach((week) => {
