@@ -5,6 +5,7 @@ const conditionElement = document.getElementById('current-condition');
 const windSpeedElement = document.getElementById('windSpeed');
 const windChillElement = document.getElementById('windChill');
 
+
 const apiKey = '95b699166f020bb1b5b355bfbb5b7c35';
 const url = `https://api.openweathermap.org/data/2.5/weather?q=accra,ghana&appid=${apiKey}&units=imperial`;
 
