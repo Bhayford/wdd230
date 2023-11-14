@@ -50,9 +50,11 @@
             </ul>
             <p>Lessons are to make us understand the course better</p>
         </section>
-        <section class="card">
-            <h3>Information</h3>
-            <p>Weather: N/A</p>
+        <section class="card" id="weather-card">
+            <h3>Weather Information</h3>
+            <p id="temperature">Temperature: <span id="current-temp"></span> &deg;F</p></p>
+            <p id="weather-description">Condition: <span id="current-condition"></span></p>
+            <img id="weather-icon" alt="Weather Icon" src="loading.gif">
             <p>Number of Visits: <span id="visitCount">0</span></p>
         </section>
     </main>
@@ -65,5 +67,9 @@
     <script src="scripts/links.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/visitcounts.js"></script>
+    <script src="scripts/weather.js"></script>
+
+
+    
 </body>
 </html>
