@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nana Kwesi</title>
   <link rel="icon" href="images/favicon.ico" />
-  <meta name="description" content="A website that will habour all other business" />
+  <meta property="og:title" content="Nana Kwesi Chamber of Commerce" />
+  <meta property="og:image" content="images/logo.webp" />
+  <meta property="og:url" content="https://bhayford.github.io/wdd230/chamber/index.html" />
+  <meta name="description" content="Official website of Nana Kwesi Chamber of Commerce, fostering business growth and collaboration." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
@@ -30,18 +33,26 @@
         </div>
       </div>
       <nav>
-        <button id="hamburgerbtn"></button>
+        <button id="hamburgerbtn">
+          <span></span>
+          <span></span>
+        </button>
         <ul id="primaryNav">
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
           <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </section>
     <div class="header-date">
       <span id="currentdate"></span>
+    </div>
+    
+    <!-- Banner for Monday, Tuesday, and Wednesday -->
+    <div id="weekdayBanner" class="weekday-banner">
+      <p>Join us for a Chamber of Commerce meet and greet on Wednesday at 7:00 pm!</p>
     </div>
   </header>
   <main class="grid-container">
@@ -174,5 +185,6 @@
   <script src="scripts/home.js"></script>
   <script src="scripts/weather.js"></script>
   <script src="scripts/windchill.js"></script>
+  <script src="scripts/banner.js"></script>
 </body>
 </html>

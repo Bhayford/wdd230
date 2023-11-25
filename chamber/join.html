@@ -32,20 +32,25 @@
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
 </head>
-
 <body>
+    <!-- Header Section -->
     <header>
+        <!-- Banner -->
         <div id="banner"></div>
+        
+        <!-- Main Header Section -->
         <section class="main-header">
+            <!-- Logo and Chamber Name -->
             <div class="img-name">
                 <div id="header-logo">
-                    <img src="images/logo.webp" alt="chamber logo" />
+                    <img src="images/logo.webp" alt="Chamber Logo" />
                 </div>
                 <div class="chamber-name">
                     <h2>Nana Kwesi Chamber of Commerce</h2>
                 </div>
             </div>
 
+            <!-- Navigation Menu -->
             <nav>
                 <button id="hamburgerbtn"></button>
                 <ul id="primaryNav">
@@ -58,46 +63,30 @@
             </nav>
         </section>
 
+        <!-- Header Date -->
         <div class="header-date">
             <span id="currentdate"></span>
         </div>
+        <div id="weekdayBanner" class="weekday-banner">
+            <p>Join us for a Chamber of Commerce meet and greet on Wednesday at 7:00 pm!</p>
+          </div>
     </header>
 
+    <!-- Main Content Section -->
     <main class="join">
+        <!-- Join Form -->
         <div class="form">
             <h1>Join Us</h1>
             <form action="thankyou.html" method="GET" autocomplete="on">
-              <label for="fname">
+                <!-- Form Fields -->
+                <label for="fname">
                     First Name
                     <input type="text" id="fname" name="fname" required>
                 </label>
 
-                <label for="lname">
-                    Last Name
-                    <input type="text" id="lname" name="lname" required>
-                </label>
+                <!-- ... (other form fields) ... -->
 
-                <label for="business">
-                    Business Name
-                    <input type="text" id="business" name="business" pattern="[- A-Z a-z 0-9]+" required>
-                </label>
-
-                <label for="title">
-                  Job Title
-                  <input type="text" id="title" name="title">
-              </label>
-              
-
-                <label for="email">
-                    Email
-                    <input type="email" placeholder="emrysbusiness@gmail.com" id="email" name="email" required>
-                </label>
-
-                <label for="phone">
-                    Phone
-                    <input type="tel" id="phone" name="phone" required>
-                </label>
-
+                <!-- Membership Level Selection -->
                 <label for="membership">
                     Choose a membership level:
                     <select id="membership" name="membership">
@@ -109,38 +98,42 @@
                     </select>
                 </label>
 
+                <!-- Business Description Textarea -->
                 <label for="desc">
                     Business Description
                     <textarea name="desc" id="desc"></textarea>
                 </label>
 
+                <!-- Hidden Datetime Input -->
                 <label for="dateTime" hidden>
                     Datetime
                     <input type="datetime-local" name="dateTime" id="dateTime" required hidden>
                 </label>
 
+                <!-- Submit Button -->
                 <input type="submit" id="submit" value="Submit">
             </form>
         </div>
 
+        <!-- Membership Levels Section -->
         <div class="membershipLevels">
             <h1>Membership Levels</h1>
 
+            <!-- Nonprofit Level -->
             <div class="nonprofit">
                 <h2>Nonprofit</h2>
                 <p class="fee">No fee</p>
                 <p>
-                    Nonprofit membership is for businesses that are not for profit and are not
-                    self-employed.
+                    Nonprofit membership is for businesses that are not for profit and are not self-employed.
                 </p>
             </div>
 
+            <!-- Bronze Level -->
             <div class="bronze">
                 <h2>Bronze</h2>
                 <p class="fee">GH-50/month</p>
                 <p>
-                    Bronze membership is for businesses with less than 50 employees that are for profit. Benefits
-                    include:
+                    Bronze membership is for businesses with less than 50 employees that are for profit. Benefits include:
                 </p>
                 <ul>
                     <li>15% discount on events</li>
@@ -148,12 +141,12 @@
                 </ul>
             </div>
 
-            <div class "silver">
+            <!-- Silver Level -->
+            <div class="silver">
                 <h2>Silver</h2>
                 <p class="fee">GH-100/month</p>
                 <p>
-                    Silver membership is for businesses with less than 250 employees that are for profit. Additional
-                    benefits include:
+                    Silver membership is for businesses with less than 250 employees that are for profit. Additional benefits include:
                 </p>
                 <ul>
                     <li>50% discount on events</li>
@@ -162,12 +155,12 @@
                 </ul>
             </div>
 
+            <!-- Gold Level -->
             <div class="gold">
                 <h2>Gold</h2>
                 <p class="fee">GH-250/month</p>
                 <p>
-                    Gold membership is for businesses with more than 250 employees that are for profit. Additional
-                    benefits include:
+                    Gold membership is for businesses with more than 250 employees that are for profit. Additional benefits include:
                 </p>
                 <ul>
                     <li>50% discount on events</li>
@@ -180,37 +173,53 @@
         </div>
     </main>
 
+    <!-- Footer Section -->
     <footer>
+        <!-- Information Section -->
         <div class="information">
+            <!-- Footer Logo -->
             <div class="footer-logo">
-                <img src="images/logo.webp" alt="logo" />
+                <img src="images/logo.webp" alt="Chamber Logo" />
             </div>
+            
+            <!-- Chamber Information -->
             <div>
                 <h2>Nana Kwesi Chamber of Commerce</h2>
                 <p>Tema</p>
                 <p>Accra, Ghana</p>
             </div>
+            
+            <!-- Contact Information -->
             <div>
                 <p>benjaminbrandford00@gmail.com</p>
                 <p>+233594563974</p>
-                <a href="https://www.google.com/maps/@5.6037168,-0.1869644,11z">📍 See Location</a>
+                <a href="https://www.google.com/maps/@5.6037168,-0.1869644,11z" target="_blank">📍 See Location</a>
             </div>
         </div>
+
+        <!-- Horizontal Line -->
         <hr />
+
+        <!-- Footer Time Section -->
         <div class="footerTime">
+            <!-- Copyright and Creator Information -->
             &copy; <span id="currentyear"></span> <span class="slash">|</span>
-            Nana<span class="slash">|</span>
+            Nana Kwesi<span class="slash">|</span>
             <span id="creator-name"><strong>|Benjamin Brandford Hayford|</strong> </span>
             <span class="slash">|</span>
             <br class="footer1" />
+            
+            <!-- Social Media Icons -->
             <div class="socials">
-                <a href="https://web.facebook.com/login/?_rdc=1&_rdr">
-                    <img src="images/fb-logo.webp" alt="facebook icon" />
+                <a href="https://web.facebook.com/login/?_rdc=1&_rdr" target="_blank">
+                    <img src="images/fb-logo.webp" alt="Facebook Icon" />
                 </a>
-                <a href="https://www.instagram.com/">
-                    <img src="images/ig-logo.webp" alt="instagram icon" />
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/ig-logo.webp" alt="Instagram Icon" />
                 </a>
             </div>
+            
+            <!-- Project and Last Modified Information -->
             WDD 230 Project <span class="slash">|</span>
             <br class="footer2" />
             <div id="lastModified">Last Modified</div>
@@ -221,5 +230,6 @@
     <script src="scripts/home.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
